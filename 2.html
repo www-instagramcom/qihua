@@ -1,0 +1,12 @@
+<!-- FB OG 設定-->
+<meta expr:content='data:blog.title' property='og:site_name' />
+<meta expr:content='data:blog.metaDescription' itemprop='description' property='og:description' />
+<!-- FB OG 設定非文章頁面使用-->
+<b:if cond='data:blog.pageType != "item"'>
+<meta content='blog' property='og:type' />
+<meta content='填入想要顯示的網站標題' property='og:title' />
+<meta content='https://images.chinatimes.com/newsphoto/2019-06-29/900/20190629003013.jpg' itemprop='image' property='og:image' />
+<b:else/>
+這裡是你原本的語法設定 作用在文章頁面
+</b:if>
+<!-- -->
